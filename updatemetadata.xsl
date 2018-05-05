@@ -3,12 +3,12 @@
 <xsl:template match = "/icestats">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Icecast Streaming Media Server</title>
+	<title>CANFM Streaming Media Server</title>
 	<link rel="stylesheet" type="text/css" href="/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>
-	<h1>Icecast2 Admin</h1>
+	<h1>CANFM Admin</h1>
 	<!--index header menu -->
 	<div id="menu">
 		<ul>
@@ -21,7 +21,7 @@
 	<h2>Update Metadata</h2>
 	<xsl:for-each select="source">
 		<div class="roundbox">
-			<h3>Mountpoint <xsl:value-of select="@mount" /> 
+			<h3>Mountpoint <xsl:value-of select="@mount" />
 				<xsl:if test="server_name">
 					<small><xsl:value-of select="server_name" /></small>
 				</xsl:if>
@@ -41,7 +41,7 @@
 		</div>
 	</xsl:for-each>
 	<div id="footer">
-		Support icecast development at <a href="http://www.icecast.org">www.icecast.org</a>
+		Supported by <a href="http://xbyte.team">XByte.team</a>
 	</div>
 </body>
 </html>
